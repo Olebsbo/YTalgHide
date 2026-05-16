@@ -1,0 +1,6 @@
+/* Only hide when the body has the special class */
+body.hiding-enabled ytd-browse[page-subtype="home"] #contents,
+body.hiding-enabled #secondary #related,
+body.hiding-enabled ytd-rich-shelf-renderer[is-shorts] {
+  display: none !important;
+}

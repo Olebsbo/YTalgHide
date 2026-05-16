@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "YTAlgHider",
+  "version": "1.1",
+  "description": "Hides suggested videos in the home page and when watching. Used Gemini to make",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
